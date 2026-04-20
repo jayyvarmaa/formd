@@ -1,7 +1,7 @@
 # ForMD
 
 <p align="center">
-  <img src="assets/logo.png" alt="ForMD Logo" width="120px"/>
+  <img src="assets/logo.jpg" alt="ForMD Logo" width="120px"/>
 </p>
 
 <h2 align="center">The Future of Markdown Rendering</h2>
