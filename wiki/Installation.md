@@ -23,7 +23,7 @@ docker run -d \
   --name formd \
   -p 8080:80 \
   --restart unless-stopped \
-  ghcr.io/OWNER/formd:latest
+  ghcr.io/jayyvarmaa/formd:latest
 ```
 
 Then open **http://localhost:8080** in your browser.
@@ -45,7 +45,7 @@ For a more reproducible local setup, clone the repository and use Docker Compose
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/OWNER/formd.git
+git clone https://github.com/jayyvarmaa/formd.git
 cd formd
 ```
 
@@ -68,7 +68,7 @@ docker compose down
 ```yaml
 services:
   formd:
-    image: ghcr.io/OWNER/formd:latest
+    image: ghcr.io/jayyvarmaa/formd:latest
     container_name: formd
     ports:
       - "8080:80"
@@ -86,7 +86,7 @@ Because the application is 100% client-side, you can serve it from any static we
 ### Clone the repository
 
 ```bash
-git clone https://github.com/OWNER/formd.git
+git clone https://github.com/jayyvarmaa/formd.git
 cd formd
 ```
 
@@ -116,7 +116,7 @@ ForMD is also available as a cross-platform native desktop application powered b
 
 ### Download a Pre-Built Binary
 
-Go to the [Releases page](https://github.com/OWNER/formd/releases) and download the appropriate binary for your platform:
+Go to the [Releases page](https://github.com/jayyvarmaa/formd/releases) and download the appropriate binary for your platform:
 
 | Platform | File |
 |----------|------|
@@ -149,5 +149,6 @@ See the [Desktop App](Formd-Desktop) wiki page for full build instructions.
 | Architecture | x64 or ARM64 |
 | Node.js | 16+ (only required for building from source) |
 | RAM | 256 MB |
+
 
 

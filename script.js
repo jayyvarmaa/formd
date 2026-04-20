@@ -300,7 +300,7 @@ Create bullet points:
 
 ### **Links and Images**
 
-Add a [link](https://github.com/OWNER/ForMD) to important resources.
+Add a [link](https://github.com/jayyvarmaa/formd) to important resources.
 
 Embed an image:
 ![ForMD Logo](https://formd.app/assets/icon.jpg)

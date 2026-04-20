@@ -5,7 +5,7 @@ Welcome to the **ForMD** wiki — your comprehensive reference for installation,
 ## What is ForMD?
 
 > [!NOTE]
-> **Attribution:** ForMD is a fork of the [Markdown Viewer](https://github.com/OWNER/ForMD) project by [OWNER].
+> **Attribution:** ForMD is a fork of the [Markdown Viewer](https://github.com/jayyvarmaa/formd) project by [jayyvarmaa].
 
 ForMD is a **professional, feature-rich, GitHub-style Markdown editor and live-preview application** that runs entirely in the browser. It provides real-time rendering, syntax highlighting, LaTeX math support, Mermaid diagrams, and much more — all without requiring any server-side processing, sign-up, or data uploads.
 
@@ -17,9 +17,9 @@ ForMD is a **professional, feature-rich, GitHub-style Markdown editor and live-p
 
 | Platform | Quick Command |
 |----------|--------------|
-| **Docker** | `docker run -p 8080:80 ghcr.io/owner/formd:latest` |
+| **Docker** | `docker run -p 8080:80 ghcr.io/jayyvarmaa/formd:latest` |
 | **Docker Compose** | `docker compose up -d` |
-| **Desktop App** | Download the binary from [Releases](https://github.com/OWNER/ForMD/releases) |
+| **Desktop App** | Download the binary from [Releases](https://github.com/jayyvarmaa/formd/releases) |
 | **Web (self-hosted)** | Serve the root directory with any static web server |
 
 Then open **http://localhost:8080** in your browser.
@@ -77,9 +77,10 @@ Then open **http://localhost:8080** in your browser.
 
 ## Links
 
-- 🏠 [GitHub Repository](https://github.com/OWNER/ForMD)
-- 🐳 [Docker Image (GHCR)](https://github.com/OWNER/ForMD/pkgs/container/formd)
-- 📦 [Releases](https://github.com/OWNER/ForMD/releases)
-- 📄 [License (Apache 2.0)](https://github.com/OWNER/ForMD/blob/main/LICENSE)
+- 🏠 [GitHub Repository](https://github.com/jayyvarmaa/formd)
+- 🐳 [Docker Image (GHCR)](https://github.com/jayyvarmaa/formd/pkgs/container/formd)
+- 📦 [Releases](https://github.com/jayyvarmaa/formd/releases)
+- 📄 [License (Apache 2.0)](https://github.com/jayyvarmaa/formd/blob/main/LICENSE)
+
 
 

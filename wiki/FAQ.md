@@ -12,7 +12,7 @@ ForMD is a free, open-source, GitHub-style Markdown editor and live-preview appl
 
 ### Is it free to use?
 
-Yes. ForMD is completely free and open-source under the [Apache 2.0 License](https://github.com/OWNER/formd/blob/main/LICENSE).
+Yes. ForMD is completely free and open-source under the [Apache 2.0 License](https://github.com/jayyvarmaa/formd/blob/main/LICENSE).
 
 ### Do I need to create an account?
 
@@ -78,10 +78,10 @@ The quickest options are:
 
 ```bash
 # With Docker:
-docker run -p 8080:80 ghcr.io/OWNER/formd:latest
+docker run -p 8080:80 ghcr.io/jayyvarmaa/formd:latest
 
 # With Python:
-git clone https://github.com/OWNER/formd.git
+git clone https://github.com/jayyvarmaa/formd.git
 cd formd
 python3 -m http.server 8080
 ```
@@ -100,7 +100,7 @@ Yes. The web app is pure HTML/CSS/JavaScript with no build step. Clone the repos
 
 ### Is there a desktop version?
 
-Yes. A native cross-platform desktop app is available for Windows, Linux, and macOS, built with [Neutralinojs](https://neutralino.js.org/). Download the binary for your platform from the [Releases page](https://github.com/OWNER/formd/releases).
+Yes. A native cross-platform desktop app is available for Windows, Linux, and macOS, built with [Neutralinojs](https://neutralino.js.org/). Download the binary for your platform from the [Releases page](https://github.com/jayyvarmaa/formd/releases).
 
 See the [Desktop App](Formd-Desktop) wiki page for build instructions.
 
@@ -112,7 +112,7 @@ See the [Desktop App](Formd-Desktop) wiki page for build instructions.
 
 1. Make sure JavaScript is enabled in your browser.
 2. Try a hard refresh (`Ctrl+Shift+R` / `Cmd+Shift+R`).
-3. Check the browser console (F12 → Console) for errors and report them as a [GitHub Issue](https://github.com/OWNER/formd/issues).
+3. Check the browser console (F12 → Console) for errors and report them as a [GitHub Issue](https://github.com/jayyvarmaa/formd/issues).
 
 ### Math equations are not rendering.
 
@@ -165,6 +165,7 @@ See the [Contributing](Contributing) page for the full guide. In summary:
 
 ### Where do I report bugs or request features?
 
-Open a [GitHub Issue](https://github.com/OWNER/formd/issues) with a clear description and (for bugs) steps to reproduce.
+Open a [GitHub Issue](https://github.com/jayyvarmaa/formd/issues) with a clear description and (for bugs) steps to reproduce.
+
 
 

@@ -1,6 +1,6 @@
 # ForMD Desktop App Port
 
-This is a desktop app port of [ForMD](https://github.com/OWNER/ForMD), see [README](../README.md). It is built using [Neutralinojs](https://github.com/neutralinojs/neutralinojs).
+This is a desktop app port of [ForMD](https://github.com/jayyvarmaa/formd), see [README](../README.md). It is built using [Neutralinojs](https://github.com/neutralinojs/neutralinojs).
 
 ## Architecture
 
@@ -100,9 +100,10 @@ Each release includes:
 The desktop version uses [Neutralinojs](https://github.com/neutralinojs/neutralinojs), which is also licensed under the MIT License.
 
 - [Neutralinojs](https://github.com/neutralinojs/neutralinojs): [LICENSE (MIT)](LICENSE)
-- [ForMD & Desktop Port](https://github.com/OWNER/ForMD): [LICENSE (MIT)](../LICENSE)
+- [ForMD & Desktop Port](https://github.com/jayyvarmaa/formd): [LICENSE (MIT)](../LICENSE)
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=OWNER/ForMD)](https://github.com/OWNER/ForMD/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=jayyvarmaa/formd)](https://github.com/jayyvarmaa/formd/graphs/contributors)
+
 

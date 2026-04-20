@@ -62,7 +62,7 @@ The `prepare.js` script handles copying files from the project root into `formd-
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/OWNER/formd.git
+git clone https://github.com/jayyvarmaa/formd.git
 cd formd/Formd-Desktop
 
 # 2. Install npm dependencies
@@ -204,5 +204,6 @@ chmod +x formd-mac_universal
 ```
 
 Or right-click the binary in Finder, select **Open**, and confirm the security prompt.
+
 
 

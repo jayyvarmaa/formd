@@ -72,9 +72,9 @@ Drag a `.md` file from your file explorer directly onto the **editor pane**. The
 
 1. Click **GitHub Import** in the toolbar (or in the mobile menu).
 2. Paste a public GitHub URL:
-   - Repository URL (for example: `https://github.com/owner/repo`)
-   - Folder URL (for example: `https://github.com/owner/repo/tree/main/docs`)
-   - Markdown file URL (for example: `https://github.com/owner/repo/blob/main/README.md`)
+   - Repository URL (for example: `https://github.com/jayyvarmaa/repo`)
+   - Folder URL (for example: `https://github.com/jayyvarmaa/repo/tree/main/docs`)
+   - Markdown file URL (for example: `https://github.com/jayyvarmaa/repo/blob/main/README.md`)
 3. If multiple Markdown files are found, use the in-app file browser to select one or more `.md` files.
 4. Use **Select All** to quickly select every listed Markdown file (or clear the selection).
 5. Click **Import Selected** to open all selected files in new tabs.
@@ -182,5 +182,7 @@ Click the **📋 Copy** button to copy the **rendered HTML** of the preview to t
 | `Tab` | Insert 2 spaces (inside editor) |
 | `Ctrl + Z` / `Cmd + Z` | Undo |
 | `Ctrl + Y` / `Cmd + Y` | Redo |
+
+
 
 

@@ -61,7 +61,7 @@ The `Dockerfile` builds a production image using `nginx:alpine`. The embedded Ng
 The container always listens on port `80` internally. Map it to a different host port via `-p`:
 
 ```bash
-docker run -p 3000:80 ghcr.io/OWNER/formd:latest
+docker run -p 3000:80 ghcr.io/jayyvarmaa/formd:latest
 ```
 
 ### Serving at a Sub-Path
@@ -84,7 +84,7 @@ The `docker-compose.yml` in the repository root:
 ```yaml
 services:
   formd:
-    image: ghcr.io/OWNER/formd:latest
+    image: ghcr.io/jayyvarmaa/formd:latest
     container_name: formd
     ports:
       - "8080:80"
@@ -202,7 +202,7 @@ Located at `.github/workflows/docker-publish.yml`.
 |---------|-------|
 | Trigger | Push to `main`, Pull requests |
 | Registry | `ghcr.io` |
-| Image name | `OWNER/formd` |
+| Image name | `jayyvarmaa/formd` |
 | Tags generated | `latest` (on main), branch name, PR number, commit SHA |
 | Platforms | `linux/amd64`, `linux/arm64` |
 
@@ -217,5 +217,6 @@ Located at `.github/workflows/desktop-build.yml`.
 | Build platforms | Windows x64, Linux x64, Linux ARM64, macOS Universal |
 | Artifacts | Embedded binaries + `checksums.sha256` |
 | GitHub Release | Created automatically with binaries as assets |
+
 
 

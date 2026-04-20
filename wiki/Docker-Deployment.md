@@ -24,7 +24,7 @@ docker run -d \
   --name formd \
   -p 8080:80 \
   --restart unless-stopped \
-  ghcr.io/OWNER/formd:latest
+  ghcr.io/jayyvarmaa/formd:latest
 ```
 
 Open **http://localhost:8080**.
@@ -36,13 +36,13 @@ Open **http://localhost:8080**.
 ### Basic Usage
 
 ```bash
-docker run -p 8080:80 ghcr.io/OWNER/formd:latest
+docker run -p 8080:80 ghcr.io/jayyvarmaa/formd:latest
 ```
 
 ### With a Custom Port
 
 ```bash
-docker run -p 3000:80 ghcr.io/OWNER/formd:latest
+docker run -p 3000:80 ghcr.io/jayyvarmaa/formd:latest
 ```
 
 ### Named Container with Restart Policy
@@ -52,14 +52,14 @@ docker run -d \
   --name formd \
   -p 8080:80 \
   --restart unless-stopped \
-  ghcr.io/OWNER/formd:latest
+  ghcr.io/jayyvarmaa/formd:latest
 ```
 
 ### Pull a Specific Version
 
 ```bash
-docker pull ghcr.io/OWNER/formd:<tag>
-docker run -p 8080:80 ghcr.io/OWNER/formd:<tag>
+docker pull ghcr.io/jayyvarmaa/formd:<tag>
+docker run -p 8080:80 ghcr.io/jayyvarmaa/formd:<tag>
 ```
 
 Available tags: `latest`, `main`, and commit SHA tags (e.g., `abc1234`).
@@ -93,7 +93,7 @@ docker compose up -d --build
 ```yaml
 services:
   formd:
-    image: ghcr.io/OWNER/formd:latest
+    image: ghcr.io/jayyvarmaa/formd:latest
     container_name: formd
     ports:
       - "8080:80"
@@ -108,7 +108,7 @@ To change the host port, update the left value in `"8080:80"` to your desired po
 
 ```bash
 # From the repository root
-git clone https://github.com/OWNER/formd.git
+git clone https://github.com/jayyvarmaa/formd.git
 cd formd
 
 docker build -t formd:local .
@@ -184,13 +184,13 @@ The GitHub Actions workflow `.github/workflows/docker-publish.yml` automatically
 Images are published to:
 
 ```
-ghcr.io/OWNER/formd
+ghcr.io/jayyvarmaa/formd
 ```
 
 You can pull the image without authentication (public repository):
 
 ```bash
-docker pull ghcr.io/OWNER/formd:latest
+docker pull ghcr.io/jayyvarmaa/formd:latest
 ```
 
 ---
@@ -232,12 +232,13 @@ markdown.example.com {
 ```yaml
 services:
   formd:
-    image: ghcr.io/OWNER/formd:latest
+    image: ghcr.io/jayyvarmaa/formd:latest
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.markdown.rule=Host(`markdown.example.com`)"
       - "traefik.http.routers.markdown.entrypoints=websecure"
       - "traefik.http.routers.markdown.tls.certresolver=letsencrypt"
 ```
+
 
 

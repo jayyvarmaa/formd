@@ -1,135 +1,91 @@
 # ForMD
 
 <div align="center">
-    <img src="assets/logo.png" alt="ForMD Logo" width="150px"/>
-    <h3>A powerful GitHub-style Markdown rendering tool</h3>
-    <p>Fast, secure, and feature-rich - all running in your browser</p>
-    <a href="https://formd.app/">Live Demo</a> • 
-    <a href="#-features">Features</a> • 
-    <a href="#-screenshots">Screenshots</a> • 
-    <a href="#-usage">Usage</a> • 
-    <a href="#-license">License</a>
+    <img src="assets/logo.png" alt="ForMD Logo" width="120px"/>
+    <h2>The Future of Markdown Rendering</h2>
+    <p>A professional, monochromatic, skeomorphic Markdown editor and preview suite.</p>
+    
+    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    [![Version](https://img.shields.io/badge/version-1.0.0-gray.svg)](#)
+    [![Platform](https://img.shields.io/badge/platform-Web%20%7C%20Windows%20%7C%20Linux%20%7C%20macOS-black.svg)](#)
+    <br/>
+    
+    [Live Demo](https://formd.app/) • [Desktop Port](formd-desktop/) • [Documentation](wiki/Home.md)
 </div>
+
+---
 
 ## 🚀 Overview
 
-> [!NOTE]
-> **Attribution:** ForMD is a fork of the [Markdown Viewer](https://github.com/ThisIs-Developer/Markdown-Viewer) project by [ThisIs_Developer].
+**ForMD** is a premium, client-side Markdown suite designed for professionals who demand a high-fidelity, GitHub-style writing experience. Built on a sophisticated **monochromatic skeomorphic design system**, ForMD provides a tactile, immersive environment for creating technical documentation, blog posts, and diagrams.
 
-ForMD is a professional, full-featured Markdown editor and preview application that runs entirely in your browser. It provides a GitHub-style rendering experience with a clean split-screen interface, allowing you to write Markdown on one side and instantly preview the formatted output on the other.
+> [!IMPORTANT]
+> **Heritage & Attribution:** ForMD is a refined fork of the [Markdown Viewer](https://github.com/ThisIs-Developer/Markdown-Viewer) project by [ThisIs_Developer]. This project continues its legacy with a complete UI overhaul and expanded platform support.
 
-## ✨ Features
+---
 
-- **GitHub-style Markdown rendering** - See your Markdown exactly as it would appear on GitHub
-- **Live preview** - Instantly see changes as you type
-- **Syntax highlighting** - Beautiful code highlighting for multiple programming languages
-- **LaTeX math support** - Render mathematical equations using LaTeX syntax
-- **Mermaid diagrams** - Create diagrams and flowcharts within your Markdown; hover over any diagram to reveal a toolbar for zooming, downloading (PNG/SVG), and copying to clipboard
-- **Dark mode toggle** - Switch between light and dark themes for comfortable viewing
-- **Export options** - Download your content as Markdown, HTML, or PDF
-- **Import Markdown files** - Drag & drop, select local files, or import from public GitHub links
-- **Copy to clipboard** - Quickly copy your Markdown content with one click
-- **Sync scrolling** - Keep editor and preview panes aligned (toggleable)
-- **Content statistics** - Track word count, character count, and reading time
-- **Fully responsive** - Works on desktop and mobile devices
-- **Emoji support** - Convert emoji shortcodes into actual emojis
-- **100% client-side** - No server processing, ensuring complete privacy and security
-- **No sign-up required** - Use instantly without any registration
+## ✨ Key Features
 
-## 📸 Screenshots
+### ✒️ Professional Editor
+- **Live Sync-Scrolling**: Keep your editor and preview panes perfectly aligned.
+- **Skeomorphic UI**: A deep, monochromatic interface (#050505 to #fbfbfb) designed for focus.
+- **Real-time Statistics**: Track word count, character count, and reading time instantly.
 
-### Code Syntax Highlighting
-![Code Syntax Highlighting](assets/code.png)
+### 📊 Advanced Rendering
+- **GitHub-Fidelity**: Renders Markdown exactly as it appears on GitHub.
+- **Mermaid Diagrams**: Integrated zoom, pan, and export (PNG/SVG) tools via a dedicated toolbar.
+- **LaTeX Math Support**: Professional mathematical typesetting for technical papers.
 
-### Mathematical Expressions Support
-![Mathematical Expressions](assets/mathexp.png)
+### 🔌 Interoperability
+- **Multi-Format Export**: Save as high-quality **PDF**, standalone **HTML**, or standard **Markdown**.
+- **GitHub Sync**: Import files directly from public GitHub repositories.
+- **Privacy-First**: 100% client-side processing. Your data never leaves your browser.
 
-### Mermaid Diagrams
-![Mermaid Diagrams](assets/mermaid.png)
+---
 
-### Tables Support
-![Tables Support](assets/table.png)
+## 🎨 Design Philosophy: Skeomorphism 2.0
 
-## 📝 Usage
+ForMD departs from the flat-design trend, embracing a **minimalist monochromatic skeomorphic** aesthetic. By utilizing subtle inner and outer shadows, we've created a UI that feels tactile and weighted, reducing cognitive load while providing a premium, "desktop-software" feel even in the browser.
 
-1. **Writing Markdown** - Type or paste Markdown content in the left editor panel
-2. **Viewing Output** - See the rendered HTML in the right preview panel
-3. **Importing Files** - Click "Import" for local files, use "GitHub Import" for repository links, or drag and drop .md files
-4. **Exporting Content** - Use the "Export" dropdown to download as MD, HTML, or PDF
-5. **Toggle Dark Mode** - Click the moon icon to switch between light and dark themes
-6. **Toggle Sync Scrolling** - Enable/disable synchronized scrolling between panels
+---
 
-### Mermaid Diagram Toolbar
+## 📦 Deployment & Usage
 
-When a Mermaid diagram is rendered, hover over it to reveal a small toolbar with the following actions:
+### 🌐 Web (Recommended)
+Simply visit [formd.app](https://formd.app/) to start writing. No installation or account required.
 
-| Button | Action |
-|--------|--------|
-| ⛶ (arrows) | Open diagram in a zoom/pan modal |
-| PNG | Download the diagram as a PNG image |
-| 📋 (clipboard) | Copy the diagram image to the clipboard |
-| SVG | Download the diagram as an SVG file |
+### 🖥️ Native Desktop
+ForMD is available as a native cross-platform application built with [Neutralinojs](https://neutralino.js.org/).
+- **Location**: See the [`formd-desktop/`](formd-desktop/) directory.
+- **Build**: Run `npm run setup && npm run dev` inside the folder to launch.
 
-Inside the **zoom modal** you can:
-- **Zoom in / out** using the buttons or the mouse wheel
-- **Pan** by clicking and dragging the diagram
-- **Reset** zoom and position with the Reset button
-- **Download PNG or SVG** directly from the modal
-- **Close** with the × button or by pressing `Escape`
+### 🐳 Docker Deployment
+Deploy your own instance using our high-performance Nginx-based Docker image:
+```bash
+docker run -p 8080:80 -d ghcr.io/jayyvarmaa/formd:latest
+```
 
-### Supported Markdown Features
+---
 
-- Headings (# H1, ## H2, etc.)
-- **Bold** and *italic* text
-- ~~Strikethrough~~
-- [Links](https://example.com)
-- Images
-- Lists (ordered and unordered)
-- Tables
-- Code blocks with syntax highlighting
-- Blockquotes
-- Horizontal rules
-- Task lists
-- LaTeX equations (inline and block)
-- Mermaid diagrams
-- And more!
+## 🛠️ Built With
 
-## 🔧 Technologies Used
+- **Core**: HTML5, CSS3 (Vanilla), JavaScript (ES6+)
+- **Markdown**: [Marked.js](https://marked.js.org/), [highlight.js](https://highlightjs.org/)
+- **Visuals**: [Mermaid](https://mermaid.js.org/), [MathJax](https://www.mathjax.org/)
+- **Desktop**: [Neutralinojs](https://neutralino.js.org/)
+- **UI Architecture**: Monochromatic Shade/Tint Palette (#050505 - #fbfbfb)
 
-- HTML5
-- CSS3
-- JavaScript
-- [Bootstrap](https://getbootstrap.com/) - Responsive UI framework
-- [Marked.js](https://marked.js.org/) - Markdown parser
-- [highlight.js](https://highlightjs.org/) - Syntax highlighting
-- [MathJax](https://www.mathjax.org/) - Mathematical expressions
-- [Mermaid](https://mermaid-js.github.io/mermaid/) - Diagrams and flowcharts
-- [DOMPurify](https://github.com/cure53/DOMPurify) - HTML sanitization
-- [html2canvas.js](https://github.com/niklasvh/html2canvas) + [jsPDF](https://www.npmjs.com/package/jspdf)- PDF generation
-- [FileSaver.js](https://github.com/eligrey/FileSaver.js) - File download handling
-- [JoyPixels](https://www.joypixels.com/) - Emoji support
+---
 
-## 🤝 Contributing
+## 🤝 Contributing & Heritage
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to help refine ForMD further. Please feel free to submit a Pull Request.
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📈 Development Journey
-
-The ForMD has undergone significant evolution since its inception. What started as a simple markdown parser has grown into a full-featured, professional application with multiple advanced capabilities. By comparing the [current version](https://formd.app/) with the [original version](https://a1b91221.markdownviewer.pages.dev/), you can see the remarkable progress in UI design, performance optimization, and feature implementation.
+- **Source Heritage**: This project is a fork of the [Markdown Viewer](https://github.com/ThisIs-Developer/Markdown-Viewer) project.
+- **License**: This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
-    <p>Developed with ❤️ by <a href="https://github.com/OWNER">OWNER</a></p>
+    <p>Developed with ❤️ by <a href="https://github.com/jayyvarmaa">jayyvarmaa</a></p>
 </div>
-
