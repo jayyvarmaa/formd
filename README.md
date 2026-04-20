@@ -1,17 +1,24 @@
 # ForMD
 
-<div align="center">
-    <img src="assets/logo.png" alt="ForMD Logo" width="120px"/>
-    <h2>The Future of Markdown Rendering</h2>
-    <p>A professional, monochromatic, skeomorphic Markdown editor and preview suite.</p>
-    
-    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-    [![Version](https://img.shields.io/badge/version-1.0.0-gray.svg)](#)
-    [![Platform](https://img.shields.io/badge/platform-Web%20%7C%20Windows%20%7C%20Linux%20%7C%20macOS-black.svg)](#)
-    <br/>
-    
-    [Live Demo](https://formd.app/) • [Desktop Port](formd-desktop/) • [Documentation](wiki/Home.md)
-</div>
+<p align="center">
+  <img src="assets/logo.png" alt="ForMD Logo" width="120px"/>
+</p>
+
+<h2 align="center">The Future of Markdown Rendering</h2>
+
+<p align="center">A professional, monochromatic, skeomorphic Markdown editor and preview suite.</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/version-1.0.0-gray.svg" alt="Version">
+  <img src="https://img.shields.io/badge/platform-Web%20%7C%20Windows%20%7C%20Linux%20%7C%20macOS-black.svg" alt="Platform">
+</p>
+
+<p align="center">
+  <a href="https://formd.app/">Live Demo</a> • 
+  <a href="formd-desktop/">Desktop Port</a> • 
+  <a href="wiki/Home.md">Documentation</a>
+</p>
 
 ---
 
