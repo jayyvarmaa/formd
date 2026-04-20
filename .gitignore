@@ -12,6 +12,8 @@ resources.neu
 *.tar.gz
 *.zip
 DEPLOYMENT_GUIDE.md
+installer.nsi
+build-installer.ps1
 
 # Logs
 *.log
