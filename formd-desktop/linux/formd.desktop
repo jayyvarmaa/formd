@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ForMD
+Comment=Modern Markdown Viewer & Editor
+Exec=formd
+Icon=formd
+Terminal=false
+Type=Application
+Categories=Office;TextEditor;Utility;
+Keywords=Markdown;Viewer;Editor;

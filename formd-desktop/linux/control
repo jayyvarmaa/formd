@@ -1,0 +1,11 @@
+Package: formd-desktop
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: ForMD Contributors
+Depends: libwebkit2gtk-4.0-37, libgtk-3-0, libc6, libglib2.0-0
+Description: ForMD Desktop Application
+ Modern Markdown Viewer and Editor built with Neutralinojs.
+ .
+ This is the desktop port of the ForMD web application.
