@@ -1,0 +1,14 @@
+services:
+  desktop-build:
+    build:
+      context: ..
+      dockerfile: formd-desktop/Dockerfile
+    container_name: formd-desktop-build
+    volumes:
+      - ./output:/export
+    entrypoint:
+      [
+        "sh",
+        "-c",
+        "cp -r /output/* /export/ && echo '✓ Build artifacts copied to formd-desktop/output/'",
+      ]

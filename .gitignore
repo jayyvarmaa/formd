@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build & Output
+dist/
+output/
+release-assets/
+resources.neu
+*.exe
+*.tar.gz
+*.zip
+
+# Neutralinojs Binaries (Managed by setup-binaries.js)
+**/bin/
+**/node_modules/
+
+# Neutralinojs Generated Resources (Managed by prepare.js)
+**/resources/index.html
+**/resources/styles.css
+**/resources/js/script.js
+**/resources/js/neutralino.js
+**/resources/assets/
+
+# Node
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Environment & IDE
+.env
+.idea/
+.vscode/
+.gemini/
