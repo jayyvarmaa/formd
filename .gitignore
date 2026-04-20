@@ -11,6 +11,11 @@ resources.neu
 *.exe
 *.tar.gz
 *.zip
+DEPLOYMENT_GUIDE.md
+
+# Logs
+*.log
+neutralinojs.log
 
 # Neutralinojs Binaries (Managed by setup-binaries.js)
 **/bin/

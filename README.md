@@ -59,7 +59,7 @@ ForMD departs from the flat-design trend, embracing a **minimalist monochromatic
 ## 📦 Deployment & Usage
 
 ### 🌐 Web (Recommended)
-Simply visit [formd.app](https://formd.app/) to start writing. No installation or account required.
+Simply visit [formd.jayvarma.site](https://formd.jayvarma.site/) to start writing. No installation or account required.
 
 ### 🖥️ Native Desktop
 ForMD is available as a native cross-platform application built with [Neutralinojs](https://neutralino.js.org/).

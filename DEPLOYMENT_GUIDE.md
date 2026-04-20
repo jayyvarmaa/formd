@@ -20,7 +20,7 @@ Vercel is the best place to host ForMD because it's fast, secure, and has zero-c
     - **Build command**: Leave empty (ForMD is a pre-built static app).
     - **Output directory**: Leave empty (it will serve the root).
 5.  **Deploy**: Click **"Deploy"**.
-6.  **Custom Domain**: Once deployed, you can add your `formd.app` domain in the **Settings > Domains** tab of your Vercel dashboard.
+6.  **Custom Domain**: Once deployed, you can add your `formd.jayvarma.site` domain in the **Settings > Domains** tab of your Vercel dashboard.
 
 ---
 

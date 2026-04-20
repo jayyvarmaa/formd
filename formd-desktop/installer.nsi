@@ -20,12 +20,12 @@ Name "${APP_NAME}"
 OutFile "${INSTALLER_NAME}"
 InstallDir "$LOCALAPPDATA\${APP_NAME}"
 RequestExecutionLevel user
-Icon "resources\assets\icon.jpg"
+; Icon "resources\assets\icon.jpg"
 
 ; --- Modern UI Appearance ---
 !define MUI_ABORTWARNING
-!define MUI_ICON "resources\assets\icon.jpg"
-!define MUI_UNICON "resources\assets\icon.jpg"
+; !define MUI_ICON "resources\assets\icon.jpg"
+; !define MUI_UNICON "resources\assets\icon.jpg"
 
 ; --- Pages ---
 !insertmacro MUI_PAGE_WELCOME
