@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const readingTimeElement = document.getElementById("reading-time");
   const wordCountElement = document.getElementById("word-count");
   const charCountElement = document.getElementById("char-count");
+  const lineNumbers = document.getElementById("line-numbers");
 
   // View Mode Elements - Story 1.1
   const contentContainer = document.querySelector(".content-container");
@@ -303,7 +304,7 @@ Create bullet points:
 Add a [link](https://github.com/jayyvarmaa/formd) to important resources.
 
 Embed an image:
-![ForMD Logo](https://formd.app/assets/icon.jpg)
+![ForMD Logo](./assets/icon.jpg)
 
 ### **Blockquotes**
 
@@ -780,8 +781,10 @@ This is a fully client-side application. Your content never leaves your browser 
     markdownEditor.value = activeTab.content;
     restoreViewMode(activeTab.viewMode);
     renderMarkdown();
+    updateLineNumbers();
     requestAnimationFrame(function() {
       markdownEditor.scrollTop = activeTab.scrollPos || 0;
+      syncLineNumberScroll();
     });
     renderTabBar(tabs, activeTabId);
   }
@@ -1307,7 +1310,30 @@ This is a fully client-side application. Your content never leaves your browser 
 
   function debouncedRender() {
     clearTimeout(markdownRenderTimeout);
-    markdownRenderTimeout = setTimeout(renderMarkdown, RENDER_DELAY);
+    markdownRenderTimeout = setTimeout(() => {
+      renderMarkdown();
+      updateLineNumbers();
+    }, RENDER_DELAY);
+  }
+
+  /**
+   * Updates the line-number sidebar based on currently entered text rows.
+   */
+  function updateLineNumbers() {
+    if (!lineNumbers || !markdownEditor) return;
+    const lines = markdownEditor.value.split('\n');
+    const lineCount = lines.length;
+    let numbers = '';
+    for (let i = 1; i <= lineCount; i++) {
+        numbers += i + '<br>';
+    }
+    lineNumbers.innerHTML = numbers;
+    syncLineNumberScroll();
+  }
+
+  function syncLineNumberScroll() {
+    if (!lineNumbers || !markdownEditor) return;
+    lineNumbers.scrollTop = markdownEditor.scrollTop;
   }
 
   function updateDocumentStats() {
@@ -1634,6 +1660,12 @@ This is a fully client-side application. Your content never leaves your browser 
     debouncedRender();
     clearTimeout(saveTabStateTimeout);
     saveTabStateTimeout = setTimeout(saveCurrentTabState, 500);
+    updateLineNumbers();
+  });
+
+  markdownEditor.addEventListener("scroll", function() {
+    syncLineNumberScroll();
+    syncEditorToPreview();
   });
   
   // Tab key handler to insert indentation instead of moving focus

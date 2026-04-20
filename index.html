@@ -37,17 +37,17 @@
     <meta property="og:url" content="https://formd.app/">
     <meta property="og:title" content="ForMD">
     <meta property="og:description" content="ForMD is a powerful GitHub-style Markdown rendering tool with live preview, LaTeX math, Mermaid diagrams, syntax highlighting, dark mode, and export options to PDF, HTML, and MD—all fully client-side and secure.">
-    <meta property="og:image" content="https://formd.app/assets/logo.png">
+    <meta property="og:image" content="https://formd.app/assets/logo.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://formd.app/">
     <meta property="twitter:title" content="ForMD">
     <meta property="twitter:description" content="ForMD is a powerful GitHub-style Markdown rendering tool with live preview, LaTeX math, Mermaid diagrams, syntax highlighting, dark mode, and export options to PDF, HTML, and MD—all fully client-side and secure.">
-    <meta property="twitter:image" content="https://formd.app/assets/logo.png">
+    <meta property="twitter:image" content="https://formd.app/assets/logo.jpg">
 
     <title>ForMD</title>
-    <link href="assets/logo.png" rel="icon" type="image/png">
+    <link href="assets/logo.jpg" rel="icon" type="image/jpeg">
     <!-- Updated libraries to latest versions -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.3.0/github-markdown.min.css">
@@ -314,7 +314,10 @@
 
         <div class="content-container">
             <div class="editor-pane">
-                <textarea id="markdown-editor" placeholder="Type or paste your Markdown here..."></textarea>
+                <div class="editor-wrapper">
+                    <div class="line-numbers" id="line-numbers">1</div>
+                    <textarea id="markdown-editor" placeholder="Type or paste your Markdown here..." spellcheck="false"></textarea>
+                </div>
             </div>
             <!-- Resize Divider - Story 1.3 -->
             <div class="resize-divider" role="separator" aria-orientation="vertical" aria-label="Resize panes" tabindex="0">
