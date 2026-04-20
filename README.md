@@ -91,5 +91,5 @@ We welcome contributions to help refine ForMD further. Please feel free to submi
 ---
 
 <div align="center">
-    <p>Developed with ❤️ by <a href="https://github.com/jayyvarmaa">jayyvarmaa</a></p>
+    <p>Developed by <a href="https://github.com/jayyvarmaa">jayyvarmaa</a></p>
 </div>
