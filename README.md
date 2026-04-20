@@ -26,9 +26,6 @@
 
 **ForMD** is a premium, client-side Markdown suite designed for professionals who demand a high-fidelity, GitHub-style writing experience. Built on a sophisticated **monochromatic skeomorphic design system**, ForMD provides a tactile, immersive environment for creating technical documentation, blog posts, and diagrams.
 
-> [!IMPORTANT]
-> **Heritage & Attribution:** ForMD is a refined fork of the [Markdown Viewer](https://github.com/ThisIs-Developer/Markdown-Viewer) project by [ThisIs_Developer]. This project continues its legacy with a complete UI overhaul and expanded platform support.
-
 ---
 
 ## ✨ Key Features
